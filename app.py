@@ -57,7 +57,8 @@ def delete(sno):
     return redirect('/')
 
 if __name__ == "__main__":
-    db.init_app(app)  # Initialize the SQLAlchemy extension with the Flask app
+    
     with app.app_context():
+        db.init_app(app)  # Initialize the SQLAlchemy extension with the Flask app
         db.create_all()
     app.run(debug=True)
