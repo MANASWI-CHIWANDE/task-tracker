@@ -1,0 +1,8 @@
+# Ignore pycache folder
+pycache/
+
+# Ignore env folder
+env/
+
+# Ignore todo.db file
+instance/
